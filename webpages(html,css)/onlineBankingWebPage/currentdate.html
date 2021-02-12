@@ -1,0 +1,16 @@
+﻿<html>
+<body>
+<script>
+var const d=new Date();
+var const week=['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
+console.log('Today is:' + week[d.getDay()]);
+var const
+hr=d.getHours(),
+min=d.getMinutes(),
+sec=d.getSeconds();
+let prepand=(hr<12)?'AM':'PM',
+currentTime=()=>('Current time is:${hr} ${prepand} ${min}:${sec}');
+currentTime();
+</script>
+</body>
+</html>

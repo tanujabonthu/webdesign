@@ -1,0 +1,91 @@
+﻿<DOCTYPE html>
+  <html>
+
+  <head>
+    <style>
+      body {
+        background-image: url("Images/OB.png");
+        background-repeat: no-repeat;
+        background-size: 1500px 1000px;
+      }
+
+      .dropbtn {
+        background-color: white;
+        color: blue;
+        padding: 16px;
+        font-size: 10px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 10px 12px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: pink
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: pink;
+      }
+    </style>
+  </head>
+
+  <body style="background-color:powderblue;">
+    <table border="0" cellpadding="0" height="10%" width="100%">
+      <td>
+        <center><button><a href="mainpage.html">Home</a></button></center>
+      </td>
+    </table>
+    <br>
+    <br>
+    <Form>
+      <center>
+        select document from the list:
+        <div class="dropdown">
+          <center><button class="dropbtn"></button></center>
+          <div class="dropdown-content">
+            <a href="#">Driving licence</a>
+            <a href="#">Central gov id number</a>
+            <a href="#">PAN card</a>
+            <a href="#">State gov id number</a>
+            <a href="#">Passport</a>
+            <a href="#">Voter id</a>
+          </div>
+        </div>
+        <br>
+        <br>
+        Licence Name:
+        <input type="text" name="Licence Name"><br><br>
+        Licence number:
+        <input type="number" name="Licence number"><br><br>
+        <button>
+          <h4> Submit</h4>
+        </button>
+
+
+  </body>
+
+  </html>

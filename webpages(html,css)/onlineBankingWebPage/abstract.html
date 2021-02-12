@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Abstract </title>
+  <style>
+    body {
+      background-image: url("plain.jpg");
+      background-repeat: no-repeat;
+      background-size: 1500px 100px;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    img {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      width: 150px;
+    }
+
+    img:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+  </style>
+</head>
+
+<body>
+  <table border="0" cellpadding="4" align="left">
+    <td><a href="abstract.html"><img src="logo.jpg" height="30%" width="50%" </a></td>
+  </table>
+  <table border="0" cellpadding="4" align="right">
+    <td><a href="abstract.html">
+        <font color="black">Home</font>
+      </a></td>
+    <td><a href="#">
+        <font color="black">Categories
+      </a></td>
+    <td><a href="#">
+        <font color="black">Blog
+      </a></td>
+    <td><a href="#">
+        <font color="black">Styles
+      </a></td>
+    <td><a href="#">
+        <font color="black">About
+      </a></td>
+    <td><a href="#">
+        <font color="black">Contact
+      </a></td>
+  </table>
+
+  <br>
+  <div class="w3-content w3-section" style="max-width:500px">
+    <img class="mySlides" src="music1.jpg" style="width:100%">
+    <img class="mySlides" src="music2.jpg" style="width:100%">
+    <img class="mySlides" src="music3.jpg" style="width:100%">
+    <img class="mySlides" src="music4.jpg" style="width:100%">
+    <img class="mySlides" src="music5.jpg" style="width:100%">
+    <img class="mySlides" src="music6.jpg" style="width:100%">
+  </div>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000);
+    }
+  </script>
+  <a target="_blank" href="web2.jpg">
+    <img src="web2.jpg" alt="Forest" style="width:150px">
+  </a>
+  </head>
+
+</html>

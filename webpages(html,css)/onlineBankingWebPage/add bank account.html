@@ -1,0 +1,132 @@
+﻿<!-- <DOCTYPE html> -->
+<html>
+
+<head>
+  <style>
+    .dropbtn {
+      background-color: white;
+      color: blue;
+      padding: 16px;
+      font-size: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: pink
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: pink;
+    }
+  </style>
+  <title> Money Transfers </title>
+
+</head>
+
+<body style="background-color:powderblue;">
+  <table border="1" cellpadding="0" height="10%" width="100%">
+    <td>
+      <center><button><a href="bank.html">Home</a></button></center>
+    </td>
+    <td>
+      <center><button><a href="Transfer money.html">Transfer money</a></button></center>
+    </td>
+    <td>
+      <center><button><a href="Recharge and Pay Bills.html">Recharge and Pay Bills</a></button></center>
+    </td>
+    <td>
+      <center><button><a href="Wallet.html">Wallet</a></button></center>
+    </td>
+  </table>
+  <table style="background-color:white" border="0" align="right">
+    <tr>
+      <th>ADVERTISEMENTS</th>
+    </tr>
+    <tr>
+      <td>
+        <center><img src="add1.jpg" width="400" height="300"></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <center><img src="add2.jpg" width="400" height="300"></center>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <Form>
+      <center>
+        <tr>
+          <td>select bank from the list:
+            <div class="dropdown">
+              <button class="dropbtn">BANK</button>
+              <div class="dropdown-content">
+                <a href="#">SBI</a>
+                <a href="#">ICICI</a>
+                <a href="#">BOB</a>
+                <a href="#">syndi</a>
+                <a href="#">andhra</a>
+                <a href="#">PNB</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td>Account Holder Name:
+            <input type="text" name="Account Holder Name">
+          </td>
+        </tr><br>
+        <tr>
+          <td>Enter card number:
+            <input type="number" name="card number">
+          </td>
+        </tr><br>
+        <tr>
+          <td>Mail Id:
+            <input type="text" name="Mail Id">
+          </td>
+        </tr><br>
+        <tr>
+          <td>Mobile NO:
+            <input type="numbers" name="Mobile No">
+          </td>
+        </tr><br>
+        <tr>
+          <td>DOB:
+            <input type="date" name="DOB">
+          </td>
+        </tr><br>
+        <tr>
+          <td><button> Confirm</button></td>
+        </tr>
+      </center>
+</body>
+
+</html>

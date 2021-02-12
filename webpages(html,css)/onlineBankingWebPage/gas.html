@@ -1,0 +1,103 @@
+﻿<DOCTYPE html>
+  <html>
+
+  <head>
+    <style>
+      body {
+        background-image: url("Images/OB.png");
+        background-repeat: no-repeat;
+        background-size: 1500px 1000px;
+      }
+
+      .dropbtn {
+        background-color: white;
+        color: blue;
+        padding: 16px;
+        font-size: 10px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: pink
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: pink;
+      }
+    </style>
+  </head>
+
+  <body style="background-color:powderblue;">
+    <table border="0" cellpadding="0" height="10%" width="100%">
+      <td>
+        <center><button><a href="mainpage.html">Home</a></button></center>
+      </td>
+    </table>
+    <Form>
+      <center>
+        Select State From The List:
+        <div class="dropdown">
+          <button class="dropbtn"></button>
+          <div class="dropdown-content">
+            <a href="#">AP</a>
+            <a href="#">MP</a>
+            <a href="#">karnataka</a>
+            <a href="#">UP</a>
+            <a href="#">TG</a>
+            <a href="#">chennai</a>
+          </div>
+        </div>
+        <br>
+        <br>
+        Select Provider From The List:
+        <div class="dropdown">
+          <button class="dropbtn"></button>
+          <div class="dropdown-content">
+            <a href="#">GailGas</a>
+            <a href="#">HpGas</a>
+            <a href="#">Bharat</a>
+            <a href="#">Adani</a>
+          </div>
+        </div>
+        <br>
+        <br>
+        Enter valid BP number:
+        <input type="number" name="card number"><br><br>
+        Mobile NO:
+        <input type="number" name="Mobile No"><br><br>
+        Amount:
+        <input type="number" name="amount"><br><br>
+        <button>
+          <h4> Pay</h4>
+        </button>
+      </center>
+
+  </body>
+
+  </html>
