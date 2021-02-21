@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<!-- BEGIN: Head -->
+
+<head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <title>MockUp </title>
+</head>
+<!-- END: Head -->
+
+<body class="app">
+    <!-- BEGIN: Mobile Menu -->
+    <div id="container">
+
+        <div id="menu">
+
+            <ul id="slide-out" class="sidenav sidenav-fixed">
+                <li><i class=" material-icons" style="color: blue;">ac_unit</i></li>
+                <li><i class=" material-icons">search</i></li>
+                <li><i class=" material-icons gap">home</i></li>
+                <li><i class=" material-icons">local_atm</i></li>
+                <li><i class=" material-icons">view_list</i></li>
+                <li><i class=" material-icons">person_outline</i></li>
+                <li><i class=" material-icons gap2">notifications</i></li>
+                <li><i class=" material-icons">logout</i></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- END: Mobile Menu -->
+    <!-- END: Side Menu -->
+    <div id="card1">
+        <div class="row">
+            <div class="col s12 m3 l3">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                    <div class="row valign-wrapper">
+                        <div class="col s3">
+                            <i class="material-icons medium" style="color: blue;">account_circle</i>
+                        </div>
+                        <div class="col s9">
+                            <span class="black-text">
+                                <h5><b>Hi Mike,</b></h5>
+                                <h6>Welcome back!</h6>
+                            </span>
+                        </div>
+                    </div>
+                    <b>Today</b>
+                    <h5><b>$19,892</b></h5>
+                    <p>Account Balanace</p>
+                    <h6><b>$4000</b></h6>
+                    <p>Year-to-Date Contribution</p>
+                    <h6><b>$1,892</b></h6>
+                    <p>Total Interest</p>
+                    <a class='dropdown-trigger btn' style="background-color: blue;border-radius: 20px;" href='#'
+                        data-target='dropdown1'>I
+                        want to<i class="material-icons">keyboard_arrow_down</i></a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href=" #!">one</a></li>
+                        <li><a href="#!">two</a></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><a href="#!">three</a></li>
+                        <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                        <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                    </ul>
+                    <br><br>
+                    <h6><b>Recent Transactions</b></h6>
+                    <p>2020-08-07</p>
+                    <p><b>Withdrawal Transfer to Bank-XXX11</b></p>
+                    <div class="divider"></div>
+                    <p>2020-07-21</p>
+                    <p><b>Withdrawal Transfer to Bank-XXX11</b></p>
+                    <div class="divider"></div>
+                    <p>2020-07-16</p>
+                    <p><b>Withdrawal Transfer to Bank-XXX11</b></p>
+                </div>
+            </div>
+            <div class="col s12 m6 l6">
+                <p style="color:blue">Retirement Income</p>
+                <h6>Starting Year 2056</h6>
+                <div class="row">
+                    <div class="col s4 m4 l4">
+                        <h5>$300,000</h5>
+                        <p>My Goal</p>
+                        <div class="divider" style="background-color: blue;"></div>
+
+                    </div>
+                    <div class="col s4 m4 l4">
+                        <h5>59%</h5>
+                        <p>Goal Achieved</p>
+                        <div class="divider" style="background-color: blue;"></div>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        <h5>$300</h5>
+                        <p>Est Monthly Income</p>
+                        <div class="divider" style="background-color: blue;"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h6>Contributions Overtime</h6>
+                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                </div>
+                <div class="row">
+                    <h6><b>How do I compare to my peers?</b></h6>
+                    <p>These numbers represent current goal achievement</p>
+                    <div class="row">
+                        <div class="col s3 m3 l3">
+                            <p>Age:Under30</p>
+                            <div class="divider"></div>
+                            <p>Salary:K20-k30</p>
+                            <div class="divider"></div>
+                            <p>Gender:Male</p>
+                        </div>
+                        <div class="col s3 m3 l3">
+                            <div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+                        </div>
+                        <div class="col s3 m3 l3">
+                            <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+                        </div>
+                        <div class="col s3 m3 l3">
+                            <div id="chartContainer3" style="height: 300px; width: 100%;"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3 l3">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                    <h6><b>Retirement Strategy</b></h6>
+                    <p>Employee Contribution</p>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="50" value="20" class="slider" id="myRange">
+                        <span class="right" id="demo"></span>
+
+                    </div>
+                    <p>Retirement Age</p>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="60" class="slider" id="myRange1">
+                        <span class="right" id="demo1"></span>
+                    </div>
+                    <br>
+                    <div class="divider"></div>
+
+                    <p>
+                        Employee Contribution <span class="right">8.4%</span>
+                    </p>
+                    <p>Interest Rate<span class="right">5%</span></p>
+                    <br>
+                    <div class="row">
+                        <div class="col s12 m12 l12" style="background-color: blue;border-radius: 10px;">
+
+                            <p class="center" style="color: white;">Update</p>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m12 l12">
+                            <p class="center" style="color: blue;"><a>View Help Docs</a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-divider left"></div>
+                <div class="" style="margin-left: 10px;">
+                    <p>Are you consedering a<br>
+                    <h6>Housing Advance?</h6>
+                    </p>
+
+                    <p>Limited Time Reduced Intrest</p><br>
+                    <a style="color: blue;">Learn More ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    window.onload = function () {
+
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            title: {
+
+            },
+            axisX: {
+                interval: 2,
+                intervalType: ""
+            },
+            axisY: {
+                valueFormatString: "$0",
+                gridColor: "#B6B1A8",
+                tickColor: "#B6B1A8"
+            },
+            toolTip: {
+                shared: true,
+                content: toolTipContent
+            },
+            data: [{
+                type: "stackedColumn",
+                showInLegend: true,
+                color: "blue",
+                name: "Employer:K 73,500",
+                dataPoints: [
+                    { y: 6.75, x: new Date(2010, 0) },
+                    { y: 8.57, x: new Date(2011, 0) },
+                    { y: 10.64, x: new Date(2012, 0) },
+                    { y: 13.97, x: new Date(2013, 0) },
+                    { y: 15.42, x: new Date(2014, 0) },
+                    { y: 17.26, x: new Date(2015, 0) },
+                    { y: 58.26, x: new Date(2016, 0) }
+                ]
+            },
+            {
+                type: "stackedColumn",
+                showInLegend: true,
+                name: "Employee:k 52,500",
+                color: "#0080ff",
+                dataPoints: [
+                    { y: 6.82, x: new Date(2010, 0) },
+                    { y: 9.02, x: new Date(2011, 0) },
+                    { y: 11.80, x: new Date(2012, 0) },
+                    { y: 14.11, x: new Date(2013, 0) },
+                    { y: 15.96, x: new Date(2014, 0) },
+                    { y: 17.73, x: new Date(2015, 0) },
+                    { y: 68.5, x: new Date(2016, 0) }
+                ]
+            },
+            {
+                type: "stackedColumn",
+                showInLegend: true,
+                name: "Total Intrest:K 244,313",
+                color: "#00bfff",
+                dataPoints: [
+                    { y: 7.28, x: new Date(2010, 0) },
+                    { y: 9.72, x: new Date(2011, 0) },
+                    { y: 13.30, x: new Date(2012, 0) },
+                    { y: 14.9, x: new Date(2013, 0) },
+                    { y: 18.10, x: new Date(2014, 0) },
+                    { y: 18.68, x: new Date(2015, 0) },
+                    { y: 80.00, x: new Date(2016, 0) }
+                ]
+            }],
+
+
+        });
+        chart.render();
+
+        function toolTipContent(e) {
+            var str = "";
+            var total = 0;
+            var str2, str3;
+            for (var i = 0; i < e.entries.length; i++) {
+                var str1 = "<span style= \"color:" + e.entries[i].dataSeries.color + "\"> " + e.entries[i].dataSeries.name + "</span>: $<strong>" + e.entries[i].dataPoint.y + "</strong>bn<br/>";
+                total = e.entries[i].dataPoint.y + total;
+                str = str.concat(str1);
+            }
+            str2 = "<span style = \"color:DodgerBlue;\"><strong>" + (e.entries[0].dataPoint.x).getFullYear() + "</strong></span><br/>";
+            total = Math.round(total * 100) / 100;
+            str3 = "<span style = \"color:Tomato\">Total:</span><strong> $" + total + "</strong>bn<br/>";
+            return (str2.concat(str)).concat(str3);
+        }
+        var chart1 = new CanvasJS.Chart("chartContainer1", {
+            animationEnabled: true,
+            title: {
+                text: "",
+                horizontalAlign: "left"
+            },
+            data: [{
+                type: "doughnut",
+                startAngle: 60,
+                innerRadius: 30,
+                indexLabelFontSize: 17,
+                indexLabel: "{label} - #percent%",
+                toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+                dataPoints: [
+                    { y: 67, label: "" },
+                    { y: 13, label: "" }
+
+                ]
+            }]
+        });
+        chart1.render();
+        var chart2 = new CanvasJS.Chart("chartContainer2", {
+            animationEnabled: true,
+            title: {
+                text: "",
+                horizontalAlign: "left"
+            },
+            data: [{
+                type: "doughnut",
+                startAngle: 60,
+                innerRadius: 30,
+                indexLabelFontSize: 17,
+                indexLabel: "{label} - #percent%",
+                toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+                dataPoints: [
+                    { y: 95, label: "" },
+                    { y: 5, label: "" }
+
+                ]
+            }]
+        });
+        chart2.render();
+        var chart3 = new CanvasJS.Chart("chartContainer3", {
+            animationEnabled: true,
+            title: {
+                text: "",
+                horizontalAlign: "left"
+            },
+            data: [{
+                type: "doughnut",
+                startAngle: 60,
+                innerRadius: 30,
+                indexLabelFontSize: 17,
+                indexLabel: "{label} - #percent%",
+                toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+                dataPoints: [
+                    { y: 52, label: "" },
+                    { y: 48, label: "" }
+
+                ]
+            }]
+        });
+        chart3.render();
+
+
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {});
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems, {});
+    });
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function () {
+        output.innerHTML = this.value;
+    }
+    var slider1 = document.getElementById("myRange1");
+    var output1 = document.getElementById("demo1");
+    output1.innerHTML = slider1.value;
+
+    slider1.oninput = function () {
+        output1.innerHTML = this.value;
+    }
+
+
+</script>
+<style>
+    body {
+        top: 0px !important;
+    }
+
+    li {
+        margin-top: 20px !important;
+        margin-left: 20px !important;
+        color: grey !important;
+    }
+
+    .gap {
+        margin-top: 50px !important;
+        background-color: blue;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .gap2 {
+        margin-top: 50px !important;
+    }
+
+    #slide-out {
+        margin-top: 0px !important;
+        background-color: white;
+        width: 80px;
+        border-top-left-radius: 70px;
+    }
+
+    @media only screen and (min-width: 993px) {
+        #card1 {
+            margin-top: -10px !important;
+            margin-left: 70px !important;
+        }
+    }
+
+    @media only screen and (min-width: 601px) {
+        #card1 {
+            margin-top: 0px !important;
+            margin-left: 70px !important;
+        }
+    }
+
+
+    .slidecontainer {
+        width: 80%;
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 15px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    .slider:hover {
+        opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #4CAF50;
+        cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #4CAF50;
+        cursor: pointer;
+    }
+
+    .vertical-divider {
+        border-left: 3px solid blue;
+        height: 180px;
+    }
+</style>
+
+</html>

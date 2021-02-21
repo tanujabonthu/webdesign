@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <link rel="stylesheet" type="text/css" href="stylenav.css">
+    <script src="navbar.js">
+
+        document.write('        <ul id=\"language\" class=\' language\'>\n');
+        document.write('            <li><a class=\"black-text\">ENGLISH</a></li>\n');
+        document.write('            <li><a class=\"black-text\" > 简体中文</a></li>\n');
+        document.write('            <li><a class=\"black-text\"> 繁體中文</a></li>\n');
+        document.write('            <li><a class=\"black-text\"> BAHASA INDONESIA</a></li>\n');
+        document.write('            <li><a class=\"black-text\"> 日本語</a></li>\n');
+        document.write('            <li><a class=\"black-text\"> 한국어</a></li>\n');
+        document.write('            <li><a class=\"black-text\"> ภาษาไทย</a></li>\n');
+        document.write('            <li><a class=\"black-text\"> TIẾNG VIỆT</a></li>\n');
+        document.write('            <li><a class=\"black-text\"> हिन्दी</a></li>\n');
+        document.write('            <li><a class=\"black-text\"> বাংলা</a></li>\n');
+        document.write('            <li><a class=\"black-text\"> தமிழ்</a></li>\n');
+        document.write('        </ul>\n');
+    </script>
+    <script src="language&currencyalert.js"></script>
+
+</head>
+
+<body id="html">
+    <div class="" id="main">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card" style="height: 330px;" id="graphagent">
+                    <div class="card-content">
+                        <span class="card-title">
+                            <p class="center"><b>Bookings&TopUp Graph</b></p>
+                        </span>
+                        <div class="wrapper">
+                            <canvas id="myChart"></canvas>
+                        </div>
+
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card" style="height: 330px;" id="trending">
+                    <div class="card-content">
+                        <div class="card-title"><b>Trending Attractions</b>
+                            <div class="carousel-wrapper horizontalScroll">
+                                <span id="item-7"></span>
+                                <span id="item-8"></span>
+                                <span id="item-9"></span>
+                                <div class="carousel-item item-7">
+
+                                    <div class="row" id="content">
+                                        <div class="gallery-items">
+                                            <div class="row">
+                                                <div class="col s6 m6 item">
+                                                    <div class="gallery-inner">
+                                                        <a href="https://agents.agidmc.com/city/32/Penang"> <img
+                                                                src="https://agidmc.com/images/city/127.jpg" alt="">
+                                                            <div class="centered">
+                                                                <h5 class="center-align white-text"
+                                                                    style="font-size:18px;">Penang</h5>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col s6 m6 item">
+                                                    <div class="gallery-inner">
+                                                        <a href="https://agents.agidmc.com/city/43/Chiayi"> <img
+                                                                src="https://agidmc.com/images/city/123.jpg" alt="">
+                                                            <div class="centered  ">
+                                                                <h5 class="center-align white-text"
+                                                                    style="font-size:18px;">Chiayi</h5>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col s6 m6 item">
+                                                    <div class="gallery-inner">
+                                                        <a href="https://agents.agidmc.com/country/1/Singapore"> <img
+                                                                src="https://www.singaporeconvention.org/assets/media/images/background.jpg"
+                                                                width="100%">
+                                                            <div class="centered">
+                                                                <h5 class="center white-text" style="font-size:18px;">
+                                                                    Singapore</h5>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col s6 m6 item">
+                                                    <div class="gallery-inner">
+                                                        <a href="https://agents.agidmc.com/cityy/243/Goa"> <img
+                                                                src="https://agidmc.com/images/city/126.jpg" alt="">
+                                                            <div class="centered  ">
+                                                                <h5 class="center-align white-text"
+                                                                    style="font-size:18px;">Goa</h5>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <a class="arrow arrow-next" href="#item-8"></a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item item-8">
+                                    <div class="row  ">
+                                        <div class="gallery-items">
+                                            <div class="row">
+                                                <div class="col s6 m6 item">
+                                                    <div class="gallery-inner">
+                                                        <a href="https://agents.agidmc.com/city/7/Lombok"><img
+                                                                src="https://agidmc.com/images/city/25.jpg" alt="">
+                                                            <div class="centered">
+                                                                <h5 class="center white-text" style="font-size:18px;">
+                                                                    Lombok</h5>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col s6 m6 item">
+                                                    <div class="gallery-inner">
+                                                        <a href="https://agents.agidmc.com/city/28/Cameron "> <img
+                                                                src="https://agidmc.com/images/city/23.jpg" alt="">
+                                                            <div class="centered  ">
+                                                                <h5 class="center-align white-text"
+                                                                    style="font-size:18px;">Cameron</h5>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col s6 m6 item">
+                                                    <div class="gallery-inner mobileview">
+                                                        <a href="https://agents.agidmc.com/city/34/Johor"> <img
+                                                                height="100px"
+                                                                src="https://agidmc.com/images/city/132.jpg" alt="">
+                                                            <div class="centered  ">
+
+                                                                <h5 class="center-align white-text"
+                                                                    style="font-size:18px;">Johor</h5>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col s6 m6 item ">
+                                                    <div class="gallery-inner mobileview">
+                                                        <a href="https://agents.agidmc.com/city/293/kathmandu"> <img
+                                                                src="https://agidmc.com/images/city/124.jpg" alt="">
+                                                            <div class="centered  ">
+
+                                                                <h5 class="center-align white-text"
+                                                                    style="font-size:18px;">Kathmandu</h5>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="arrow arrow-prev" href="#item-7"></a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card" style="height: 350px;">
+                        <div class="card-content">
+                            <div class="card-title"><b>Top Booked Tickets</b>
+                                <div class="carousel-wrapper horizontalScroll">
+                                    <span id="item-4"></span>
+                                    <span id="item-5"></span>
+                                    <span id="item-6"></span>
+                                    <div class="carousel-item item-4">
+
+                                        <div class="row" id="content">
+                                            <div class="gallery-items">
+                                                <div class="row">
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/country/1/Singapore">
+                                                                <img src="https://www.singaporeconvention.org/assets/media/images/background.jpg"
+                                                                    width="100%">
+                                                                <div class="centered">
+                                                                    <h5 class="center white-text"
+                                                                        style="font-size:18px;">Singapore</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/cityy/243/Goa"> <img
+                                                                    src="https://agidmc.com/images/city/126.jpg" alt="">
+                                                                <div class="centered  ">
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Goa</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/city/293/kathmandu"> <img
+                                                                    src="https://agidmc.com/images/city/124.jpg" alt="">
+                                                                <div class="centered  ">
+
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Kathmandu</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/city/353/Zurich"> <img
+                                                                    src="https://agidmc.com/images/city/177.jpg" alt="">
+                                                                <div class="centered  center-align">
+                                                                    <h5 class="text-center white-text"
+                                                                        style="font-size:18px;"> Zurich </h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="arrow arrow-next" href="#item-5"></a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item item-5">
+                                        <div class="row  ">
+                                            <div class="gallery-items">
+                                                <div class="row">
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/country/47/Hungary"> <img
+                                                                    src="https://agidmc.com/images/country/39.jpg"
+                                                                    width="100%">
+                                                                <div class="centered">
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Hungary</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/country/22/Belgium"> <img
+                                                                    src="https://agidmc.com/images/country/22.jpg"
+                                                                    width="100%">
+                                                                <div class="centered  ">
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Belgium</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/city/221/Paris"> <img
+                                                                    height="100px"
+                                                                    src="https://agidmc.com/images/city/153.jpg" alt="">
+                                                                <div class="centered  ">
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Paris</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/country/2/Indonesia">
+                                                                <img src="https://img.jakpost.net/c/2019/03/19/2019_03_19_67991_1552969698._large.jpg"
+                                                                    width="100%">
+                                                                <div class="centered white-text">
+                                                                    <h5 class="center-align" style="font-size:18px;">
+                                                                        Indonesia</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="arrow arrow-prev" href="#item-4"></a>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card" style="height: 350px;">
+                        <div class="card-content">
+                            <div class="card-title"><b>Recent Booked Tickets</b>
+                                <div class="carousel-wrapper horizontalScroll">
+                                    <span id="item-1"></span>
+                                    <span id="item-2"></span>
+                                    <span id="item-3"></span>
+                                    <div class="carousel-item item-1">
+
+                                        <div class="row" id="content">
+                                            <div class="gallery-items">
+                                                <div class="row">
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/country/1/Singapore">
+                                                                <img src="https://www.singaporeconvention.org/assets/media/images/background.jpg"
+                                                                    width="100%">
+                                                                <div class="centered">
+                                                                    <h5 class="center white-text"
+                                                                        style="font-size:18px;">Singapore</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/country/14/Macau"> <img
+                                                                    src="https://agidmc.com/images/country/3.jpg"
+                                                                    width="100%">
+                                                                <div class="centered  ">
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Hongkong</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/city/7/Lombok"><img
+                                                                    src="https://agidmc.com/images/city/25.jpg" alt="">
+                                                                <div class="centered">
+                                                                    <h5 class="center white-text"
+                                                                        style="font-size:18px;">Lombok</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/country/12/China"> <img
+                                                                    src="https://handluggageonly.co.uk/wp-content/uploads/2017/04/Mutianyu-Great-Wall.jpg"
+                                                                    width="100%">
+                                                                <div class="centered  center-align">
+                                                                    <h5 class="text-center white-text"
+                                                                        style="font-size:18px;"> China </h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="arrow arrow-next" href="#item-2"></a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item item-2">
+                                        <div class="row  ">
+                                            <div class="gallery-items">
+                                                <div class="row">
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/country/47/Hungary"> <img
+                                                                    src="https://agidmc.com/images/country/39.jpg"
+                                                                    width="100%">
+                                                                <div class="centered">
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Hungary</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/country/22/Belgium"> <img
+                                                                    src="https://agidmc.com/images/country/22.jpg"
+                                                                    width="100%">
+                                                                <div class="centered  ">
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Belgium</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/country/22/Belgium"> <img
+                                                                    src="https://agidmc.com/images/country/20.jpg"
+                                                                    width="100%">
+                                                                <div class="centered  ">
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Bahamas</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/country/8/Vietnam"> <img
+                                                                    src="https://agidmc.com/images/country/80.jpg"
+                                                                    width="100%">
+                                                                <div class="centered white-text">
+
+                                                                    <h5 class="center-align" style="font-size:18px;">
+                                                                        Vietnam</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <a class="arrow arrow-prev" href="#item-1"></a>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+
+                    <div class="card" style="height: 350px;" id="topcustomers">
+                        <div class="card-content">
+                            <h4 class="card-title mb-0"><b>Top Customers</b></h4>
+
+                            <ul class="collection mb-0">
+                                <li class="collection-item avatar">
+                                    <i class="circle material-icons">account_circle</i>
+                                    <p class="font-weight-600">John Doe</p>
+                                    <p class="medium-small">18, January 2020</p>
+                                    <a href="" class="secondary-content"><i class="material-icons">star_border</i></a>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="circle material-icons">account_circle</i>
+                                    <p class="font-weight-600">Adam Garza</p>
+                                    <p class="medium-small">20, January 2020</p>
+                                    <a href="" class="secondary-content"><i class="material-icons">star_border</i></a>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="circle material-icons">account_circle</i>
+                                    <p class="font-weight-600">Jennifer Rice</p>
+                                    <p class="medium-small">25, January 2020</p>
+                                    <a href="" class="secondary-content"><i class="material-icons">star_border</i></a>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="circle material-icons">account_circle</i>
+                                    <p class="font-weight-600">Rice</p>
+                                    <p class="medium-small">30, January 2020</p>
+                                    <a href="" class="secondary-content"><i class="material-icons">star_border</i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col s12 m6">
+                    <div class="card" style="height: 350px;">
+                        <div class="card-content">
+                            <div class="card-title"><b>Most Booking Cities</b>
+                                <div class="carousel-wrapper horizontalScroll">
+                                    <span id="item-13"></span>
+                                    <span id="item-14"></span>
+                                    <span id="item-15"></span>
+                                    <div class="carousel-item item-13">
+
+                                        <div class="row" id="content">
+                                            <div class="gallery-items">
+                                                <div class="row">
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/city/7/Lombok"><img
+                                                                    src="https://agidmc.com/images/city/25.jpg" alt="">
+                                                                <div class="centered">
+                                                                    <h5 class="center white-text"
+                                                                        style="font-size:18px;">Lombok</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/city/28/Cameron "> <img
+                                                                    src="https://agidmc.com/images/city/23.jpg" alt="">
+                                                                <div class="centered  ">
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Cameron</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/city/34/Johor"> <img
+                                                                    height="100px"
+                                                                    src="https://agidmc.com/images/city/132.jpg" alt="">
+                                                                <div class="centered  ">
+
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Johor</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/city/293/kathmandu"> <img
+                                                                    src="https://agidmc.com/images/city/124.jpg" alt="">
+                                                                <div class="centered  ">
+
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Kathmandu</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="arrow arrow-next" href="#item-14"></a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item item-14">
+                                        <div class="row  ">
+                                            <div class="gallery-items">
+                                                <div class="row">
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/city/32/Penang"> <img
+                                                                    src="https://agidmc.com/images/city/127.jpg" alt="">
+                                                                <div class="centered">
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Penang</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/city/43/Chiayi"> <img
+                                                                    src="https://agidmc.com/images/city/123.jpg" alt="">
+                                                                <div class="centered  ">
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Chiayi</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/city/47/Hanoi"> <img
+                                                                    src="https://agidmc.com/images/city/28.jpg" alt="">
+                                                                <div class="centered  ">
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Hanoi</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col s6 m6 item">
+                                                        <div class="gallery-inner">
+                                                            <a href="https://agents.agidmc.com/cityy/243/Goa"> <img
+                                                                    src="https://agidmc.com/images/city/126.jpg" alt="">
+                                                                <div class="centered  ">
+                                                                    <h5 class="center-align white-text"
+                                                                        style="font-size:18px;">Goa</h5>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="arrow arrow-prev" href="#item-13"></a>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+</body>
+
+
+<script src="footer.js"></script>
+<script>
+    var jsonfile = {
+        "jsonarray": [{
+            "name": "JAN",
+            "bookings": 0
+        }, {
+            "name": "FEB",
+            "bookings": 80
+        },
+
+        {
+            "name": "MAR",
+            "bookings": 50
+        },
+        {
+            "name": "APR",
+            "bookings": 20
+        },
+        {
+            "name": "MAY",
+            "bookings": 80
+        },
+        {
+            "name": "JUN",
+            "bookings": 30
+        },
+        {
+            "name": "JUL",
+            "bookings": 100
+        }
+        ]
+    };
+
+    var labels1 = jsonfile.jsonarray.map(function (e) {
+        return e.name;
+    });
+    var data1 = jsonfile.jsonarray.map(function (e) {
+        return e.bookings;
+    });;
+
+
+    var jsonfile = {
+        "jsonarray": [{
+            "name": "JAN",
+            "bookings": 60
+        }, {
+            "name": "FEB",
+            "bookings": 40
+        },
+
+        {
+            "name": "MAR",
+            "bookings": 200
+        },
+        {
+            "name": "APR",
+            "bookings": 80
+        },
+        {
+            "name": "MAY",
+            "bookings": 40
+        },
+        {
+            "name": "JUN",
+            "bookings": 150
+        },
+        {
+            "name": "JUL",
+            "bookings": 70
+        }
+        ]
+    };
+
+
+    var data2 = jsonfile.jsonarray.map(function (e) {
+        return e.bookings;
+    });;
+    var speedCanvas = document.getElementById('myChart').getContext("2d");
+
+    var gradientStroke = speedCanvas.createLinearGradient(500, 0, 100, 0);
+    gradientStroke.addColorStop(0, '#f49080');
+    gradientStroke.addColorStop(1, '#80b6f4');
+
+    var gradientStrokes = speedCanvas.createLinearGradient(500, 0, 100, 0);
+    gradientStrokes.addColorStop(0, '#80b6f4');
+    gradientStrokes.addColorStop(1, '#f49080');
+
+    var dataFirst = {
+        label: "Bookings",
+        borderColor: gradientStroke,
+
+        pointBorderColor: gradientStroke,
+        pointBackgroundColor: gradientStroke,
+        pointHoverBackgroundColor: gradientStroke,
+        pointHoverBorderColor: gradientStroke,
+        pointBorderWidth: 0.5,
+        pointHoverRadius: 10,
+        pointHoverBorderWidth: 1,
+        pointRadius: 3,
+        fill: false,
+        borderWidth: 4,
+        data: data1,
+
+
+
+    };
+
+    var dataSecond = {
+        label: "TopUp",
+        borderColor: gradientStrokes,
+
+        pointBorderColor: gradientStrokes,
+        pointBackgroundColor: gradientStrokes,
+        pointHoverBackgroundColor: gradientStrokes,
+        pointHoverBorderColor: gradientStrokes,
+        pointBorderWidth: 0.5,
+        pointHoverRadius: 10,
+        pointHoverBorderWidth: 1,
+        pointRadius: 3,
+        fill: false,
+        borderWidth: 4,
+        data: data2,
+
+    };
+
+    var speedData = {
+        label: "",
+
+        labels: labels1,
+        datasets: [dataFirst, dataSecond]
+    };
+
+    var chartOptions = {
+        legend: {
+            display: true,
+            position: 'top',
+            labels: {
+                boxWidth: 80,
+                fontColor: 'black'
+            }
+        }
+    };
+
+    var lineChart = new Chart(speedCanvas, {
+        type: 'line',
+        data: speedData,
+        options: chartOptions,
+
+        options: {
+            legend: {
+                position: "bottom"
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        display: true,
+                        beginAtZero: true,
+                        maxTicksLimit: 5,
+                    },
+                    gridLines: {
+                        display: false
+                    }
+                }],
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }]
+            }
+        }
+    });
+</script>
+
+</script>
+
+<script src="dashboardsideclose.js"></script>
+
+<style>
+    .circle {
+        background: linear-gradient(to right, red, purple);
+    }
+
+    .wrapper {
+        width: 100%;
+        display: block;
+
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 4px;
+    }
+
+    canvas {
+        background: #fff;
+    }
+
+    .card-title {
+        margin-top: -10px !important;
+    }
+
+    .gallery-items img {
+        height: 100px;
+        border-radius: 20px;
+        width: 100%;
+        position: center;
+        size: cover;
+
+    }
+
+    .gallery-inner {
+        height: 100px;
+        border-radius: 20px;
+        width: 100%;
+        position: center;
+        size: cover;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        color: white;
+        font-size: large;
+    }
+
+    .centered {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+    }
+
+
+    .carousel-wrapper {
+        height: 250px;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        color: white;
+        font-size: large;
+
+    }
+
+    .carousel-item {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 25px 50px;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .arrow {
+        border: solid blue;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 8px;
+    }
+
+    .arrow-prev {
+        left: 25px !important;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(135deg);
+    }
+
+    .arrow-next {
+        right: 15px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    @media only screen and (max-width : 992px) {
+
+        .arrow-prev,
+        .arrow-next {
+
+            top: 50%;
+        }
+
+        .carousel-wrapper {
+            display: flex;
+            flex-wrap: nowrap;
+            width: auto;
+            -webkit-overflow-scrolling: touch;
+            overflow-x: hidden;
+            overflow-y: scroll;
+
+        }
+
+        .arrow,
+        .arrow {
+            background-size: 10px;
+            background-position: 10px 50%;
+        }
+    }
+
+    @media only screen and (max-width : 992px) {
+
+        #graphagent {
+            height: 200px !important;
+        }
+    }
+
+    #Attractions {
+        overflow-y: scroll;
+    }
+
+    #topcustomers {
+        overflow-y: scroll;
+    }
+
+    /*Select every element*/
+    [id^="item"] {
+        display: none;
+    }
+
+    .item-1 {
+        z-index: 2;
+        opacity: 1;
+
+    }
+
+
+    *:target~.item-1 {
+        opacity: 0;
+    }
+
+    #item-1:target~.item-1 {
+        opacity: 1;
+    }
+
+    #item-2:target~.item-2,
+    #item-3:target~.item-3 {
+        z-index: 3;
+        opacity: 1;
+    }
+
+    .item-4 {
+        z-index: 2;
+        opacity: 1;
+
+    }
+
+
+    *:target~.item-4 {
+        opacity: 0;
+    }
+
+    #item-4:target~.item-4 {
+        opacity: 1;
+    }
+
+    #item-5:target~.item-5,
+    #item-6:target~.item-6 {
+        z-index: 3;
+        opacity: 1;
+    }
+
+    .item-7 {
+        z-index: 2;
+        opacity: 1;
+
+    }
+
+
+    *:target~.item-7 {
+        opacity: 0;
+    }
+
+    #item-7:target~.item-7 {
+        opacity: 1;
+    }
+
+    #item-8:target~.item-8,
+    #item-9:target~.item-9 {
+        z-index: 3;
+        opacity: 1;
+    }
+
+    .item-13 {
+        z-index: 2;
+        opacity: 1;
+
+    }
+
+
+    *:target~.item-13 {
+        opacity: 0;
+    }
+
+    #item-13:target~.item-13 {
+        opacity: 1;
+    }
+
+    #item-14:target~.item-14,
+    #item-15:target~.item-15 {
+        z-index: 3;
+        opacity: 1;
+    }
+</style>
+
+</html>
